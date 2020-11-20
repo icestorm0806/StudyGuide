@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>98656178447-h04f1kkdpd4p2be13pmqtur0okbqi79u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.98656178447-h04f1kkdpd4p2be13pmqtur0okbqi79u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhYmbKW9YCGy71uSNA_8IL7KnOh02-1mI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>98656178447</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aaronfulwider.StudyGuide</string>
+	<key>PROJECT_ID</key>
+	<string>studyguide-9860d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>studyguide-9860d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:98656178447:ios:08230be91b4b7ff84d2e7a</string>
+	<key>DATABASE_URL</key>
+	<string>https://studyguide-9860d.firebaseio.com</string>
+</dict>
+</plist>
