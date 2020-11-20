@@ -3,15 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6C2BF53A23CFD990872C098B /* Pods_StudyGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6547D03F911AA602B68C4404 /* Pods_StudyGuide.framework */; };
 		CC83854E2567983100242B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC83854D2567983100242B54 /* AppDelegate.swift */; };
 		CC8385502567983100242B54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC83854F2567983100242B54 /* SceneDelegate.swift */; };
-		CC8385522567983100242B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8385512567983100242B54 /* ViewController.swift */; };
-		CC8385552567983100242B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8385532567983100242B54 /* Main.storyboard */; };
+		CC8385522567983100242B54 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8385512567983100242B54 /* WelcomeViewController.swift */; };
 		CC8385572567983100242B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8385562567983100242B54 /* Assets.xcassets */; };
 		CC83855A2567983100242B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8385582567983100242B54 /* LaunchScreen.storyboard */; };
 		CC8385632567988100242B54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC8385622567988100242B54 /* GoogleService-Info.plist */; };
@@ -24,11 +23,10 @@
 		CC83854A2567983100242B54 /* StudyGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC83854D2567983100242B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC83854F2567983100242B54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC8385512567983100242B54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC8385542567983100242B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC8385512567983100242B54 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CC8385562567983100242B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC8385592567983100242B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC83855B2567983100242B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC83855B2567983100242B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "StudyGuide/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		CC8385622567988100242B54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A73C23F2567A383003153A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC83854D2567983100242B54 /* AppDelegate.swift */,
+				CC83854F2567983100242B54 /* SceneDelegate.swift */,
+				CC8385562567983100242B54 /* Assets.xcassets */,
+				CC8385582567983100242B54 /* LaunchScreen.storyboard */,
+				CC8385622567988100242B54 /* GoogleService-Info.plist */,
+				CC83855B2567983100242B54 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		9D9EED3DC25B79C0C00C1D23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,14 +84,8 @@
 		CC83854C2567983100242B54 /* StudyGuide */ = {
 			isa = PBXGroup;
 			children = (
-				CC83854D2567983100242B54 /* AppDelegate.swift */,
-				CC83854F2567983100242B54 /* SceneDelegate.swift */,
-				CC8385512567983100242B54 /* ViewController.swift */,
-				CC8385532567983100242B54 /* Main.storyboard */,
-				CC8385562567983100242B54 /* Assets.xcassets */,
-				CC8385582567983100242B54 /* LaunchScreen.storyboard */,
-				CC8385622567988100242B54 /* GoogleService-Info.plist */,
-				CC83855B2567983100242B54 /* Info.plist */,
+				3A73C23F2567A383003153A8 /* Support Files */,
+				CC8385512567983100242B54 /* WelcomeViewController.swift */,
 			);
 			path = StudyGuide;
 			sourceTree = "<group>";
@@ -91,7 +96,6 @@
 				C7957EAECEA1A68CDC144EC6 /* Pods-StudyGuide.debug.xcconfig */,
 				168E41195263D7403AB8922F /* Pods-StudyGuide.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,7 +161,6 @@
 				CC83855A2567983100242B54 /* LaunchScreen.storyboard in Resources */,
 				CC8385632567988100242B54 /* GoogleService-Info.plist in Resources */,
 				CC8385572567983100242B54 /* Assets.xcassets in Resources */,
-				CC8385552567983100242B54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8385522567983100242B54 /* ViewController.swift in Sources */,
+				CC8385522567983100242B54 /* WelcomeViewController.swift in Sources */,
 				CC83854E2567983100242B54 /* AppDelegate.swift in Sources */,
 				CC8385502567983100242B54 /* SceneDelegate.swift in Sources */,
 			);
@@ -219,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC8385532567983100242B54 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC8385542567983100242B54 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC8385582567983100242B54 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,12 +356,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZD753K9SY2;
-				INFOPLIST_FILE = StudyGuide/Info.plist;
+				INFOPLIST_FILE = "StudyGuide/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfulwider.StudyGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -381,12 +378,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZD753K9SY2;
-				INFOPLIST_FILE = StudyGuide/Info.plist;
+				INFOPLIST_FILE = "StudyGuide/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfulwider.StudyGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
