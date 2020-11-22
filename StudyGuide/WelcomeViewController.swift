@@ -13,7 +13,10 @@ class WelcomeViewController: UIViewController {
     
     let stackView = UIStackView()
     
+    let emailTextView = UIView()
     let emailTextField = UITextField()
+    
+    let passwordTextView = UIView()
     let passwordTextField = UITextField()
     
     override func viewDidLoad() {
@@ -25,14 +28,10 @@ class WelcomeViewController: UIViewController {
     
     func setupUI() {
         view.addSubview(stackView)
-        stackView.addArrangedSubview(emailTextField)
-        stackView.addArrangedSubview(passwordTextField)
-        let first = stackView.arrangedSubviews.count * 30
-        print("First: \(first)")
-        let second = (stackView.arrangedSubviews.count - 1) * 2
-        print("Second: \(second)")
-        let third = first + second
-        print("Third: \(third)")
+        stackView.addArrangedSubview(emailTextView)
+        emailTextView.addSubview(emailTextField)
+        stackView.addArrangedSubview(passwordTextView)
+        passwordTextView.addSubview(passwordTextField)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -42,10 +41,30 @@ class WelcomeViewController: UIViewController {
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
         
-        stackView.heightAnchor.constraint(equalToConstant: CGFloat(third)).isActive = true
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fillEqually
         stackView.axis = .vertical
         stackView.spacing = 2
         stackView.layer.cornerRadius = 8
+        stackView.heightAnchor.constraint(equalToConstant: stackHeight(40,2)).isActive = true
+        
+        emailTextView.layer.cornerRadius = 8
+        emailTextView.backgroundColor = .systemGray6
+        emailTextField.backgroundColor = .white
+            emailTextField.textAlignment = .center
+            emailTextField.font = UIFont(name: "Damascus", size: 38)
+        
+        passwordTextView.layer.cornerRadius = 8
+        passwordTextView.backgroundColor = .systemGray6
+        passwordTextField.backgroundColor = .white
+        passwordTextField.heightAnchor.constraint(equalToConstant: passwordTextView.frame.height - 2)
+            passwordTextField.textAlignment = .center
+            passwordTextField.font = UIFont(name: "Damascus", size: 38)
+    }
+    
+    func stackHeight(_ textFieldHeight:CGFloat, _ spacing:CGFloat)->CGFloat {
+        let count = stackView.arrangedSubviews.count
+        let stackHeight:CGFloat = CGFloat(count) * textFieldHeight
+        let stackSpacing = (CGFloat(count) - 1.0) * spacing
+        return stackHeight + stackSpacing
     }
 }
